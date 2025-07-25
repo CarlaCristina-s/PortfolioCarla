@@ -48,7 +48,7 @@ Este é um projeto vivo! Pretendo:
 
 Se quiser conversar sobre tecnologia, projetos ou oportunidades, entre em contato:
 
-- 📧 **caristbiologa@gmail.com**
+- 📧 **cacrisbio@gmail.com**
 - 🌐 [LinkedIn](https://www.linkedin.com/in/carlacrissouza/)
 
 ---
