@@ -44,6 +44,12 @@ Este é um projeto vivo! Pretendo:
 
 ---
 
+## Preview do Portfólio
+
+<img width="1920" height="4780" alt="portfolio_modo_claro" src="https://github.com/user-attachments/assets/e746cc66-8873-4da7-88f9-d3e453e1f2bb" />
+
+---
+
 ## 📬 Contato
 
 Se quiser conversar sobre tecnologia, projetos ou oportunidades, entre em contato:
