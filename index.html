@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive Portfolio Template">
+  <meta name="keywords" content="portfolio, web developer, front-end developer, HTML, CSS, JavaScript">
+  <meta name="author" content="Carla Cristina de Souza">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <title>Portfólio - Carla Cristina de Souza</title>
+</head>
+
+<body>
+  <button id="darkmode-toggle" aria-label="Alternar modo escuro" class="darkmode-toggle"><i
+      class="fas fa-moon"></i></button>
+  <div class="container">
+    <header class="header">
+      <button class="menu-btn" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#about">Sobre</a></li>
+          <li class="nav-item"><a href="#projects">Projetos</a></li>
+          <li class="nav-item"><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="overlay"></div>
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Olá, meu nome é</div>
+          <div class="text-2">Carla Cristina de Souza</div>
+          <div class="text-3">Eu sou <span class="typing"></span></div>
+          <a href="#projects" class="cta-button">Veja meus projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title-h2">Sobre mim</h2>
+        <div class="about-content">
+          <div class="about-photo">
+            <img src="./assets/eu6.jpeg" alt="Foto de Carla Cristina de Souza" class="about-img">
+          </div>
+          <div class="column right">
+            <p>De professora de Ciências a Desenvolvedora, minha jornada é guiada pela vontade de aprender, enfrentar
+              desafios e criar soluções que façam a diferença. Sou apaixonada por tecnologia e busco constantemente
+              aprimorar minhas habilidades. Acredito que a educação é a chave para o crescimento e estou sempre em busca
+              de novos conhecimentos. Minha experiência como professora me ensinou a importância da comunicação clara e
+              eficaz, habilidades que aplico no meu trabalho como desenvolvedora. Estou animada para contribuir com
+              projetos inovadores e impactantes.</p>
+            <div class="about-links">
+              <a href="./assets/cv/CARLA CRISTINA DE SOUZA.pdf" target="_blank" class="cta-button download-btn"
+                title="Baixar CV"><i class="fa-solid fa-file-arrow-down"></i> CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- habilidades -->
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title-h2">Habilidades</h2>
+        <div class="skills-badges-grid">
+          <div class="skill-badge">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+            <p>Estruturação semântica e acessível de páginas web.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+            <p>Estilização responsiva e moderna para todos os dispositivos.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+            <p>Interatividade, manipulação de DOM e consumo de APIs.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+            <p>Desenvolvimento de SPAs e componentes reutilizáveis.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-react"></i>
+            <span>React Native</span>
+            <p>Apps mobile multiplataforma com experiência nativa.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-flutter"></i>
+            <span>Flutter</span>
+            <p>Desenvolvimento de aplicativos móveis com Dart.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js</span>
+            <p>APIs RESTful e lógica de backend com Express.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fas fa-plug"></i>
+            <span>API REST</span>
+            <p>Consumo e criação de APIs RESTful para integração entre sistemas.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fas fa-database"></i>
+            <span>PostgreSQL</span>
+            <p>Modelagem e consultas em banco de dados relacionais.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+            <p>Controle de versão eficiente para projetos colaborativos.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+            <p>Hospedagem, versionamento e colaboração em código aberto.</p>
+          </div>
+          <div class="skill-badge">
+            <i class="fab fa-js"></i>
+            <span>TypeScript</span>
+            <p>JavaScript tipado para maior robustez e produtividade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projetos -->
+    <section class="projects" id="projects">
+      <div class="max-width">
+        <h2 class="title-h2">Projetos</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-tech="html css js elixir" data-aos="fade-up"
+            data-desc="Plataforma web para a guilda OCULAR GAMING (Albion Online), focada em agilizar e automatizar a criação e execução de eventos. Reduziu o tempo de organização de 1 hora para poucos minutos"
+            data-funcionalidades="Cadastro de membros, gerenciamento de eventos, painel administrativo, controle de presença, integração com Discord via API REST."
+            data-imgs="./assets/home-guilda.png,./assets/login.png,./assets/modal.png" data-video="">
+            <img src="./assets/home-guilda.png" alt="Ocular Gaming site screenshot" class="project-img" loading="lazy">
+            <div class="project-content">
+              <h3 class="project-title">Ocular Gaming</h3>
+              <p class="project-desc">Plataforma web desenvolvida para a guilda OCULAR GAMING (Albion Online), com foco
+                em automatizar e agilizar a organização de eventos internos. <br>
+                Reduziu o tempo de organização de eventos em até 10 vezes, substituindo o uso de planilhas por um
+                sistema centralizado.</p>
+              <div class="project-techs">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CarlaCristina-s/ocular-guild" class="project-btn" target="_blank"><i
+                    class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-tech="html css" data-aos="fade-up"
+            data-desc="Landing page institucional desenvolvida para um candidato a vereador nas eleições de 2024. Apresenta propostas, promove engajamento e facilita o contato com eleitores, respeitando as normas do partido."
+            data-funcionalidades="Apresentação de propostas, canal de contato com eleitores, layout responsivo, conformidade com regras eleitorais."
+            data-imgs="./assets/vereador.png" data-video="">
+            <img src="./assets/vereador.png" alt="Genivaldo Santos site screenshot" class="project-img" loading="lazy">
+
+            <div class="project-content">
+              <h3 class="project-title">Genivaldo Santos</h3>
+              <p class="project-desc">Site institucional desenvolvido para um candidato a vereador nas eleições de 2024,
+                com foco em comunicação direta com eleitores, divulgação de propostas e captação de apoio durante o
+                período de campanha.<br>
+                Garantiu conformidade legal com as diretrizes do partido e contribuiu para a expansão do alcance
+                digital.</p>
+              <div class="project-techs">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CarlaCristina-s/page-vereador" class="project-btn" target="_blank"><i
+                    class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-tech="html css js" data-aos="fade-up"
+            data-desc="Projeto front-end desenvolvido como prática durante formação full-stack. Simula um sistema de farmácia para cadastro e visualização de medicamentos, com páginas de login e criação de conta."
+            data-funcionalidades="Sistema web fictício desenvolvido como prática de front-end no curso de formação full-stack. O projeto simula uma farmácia digital, com funcionalidades de cadastro e listagem de medicamentos e fluxo completo de autenticação.<br>
+     Ideal para exercitar rotas, formulários e estrutura de navegação em aplicações web."
+            data-imgs="./assets/vida_saude.png,./assets/home_vida_saude.png,./assets/medicamentos_cadastrados.png"
+            data-video="">
+            <img src="./assets/vida_saude.png" alt="Projeto Farmácia Saúde e Vida" class="project-img" loading="lazy">
+
+            <div class="project-content">
+              <h3 class="project-title">Farmácia Saúde e Vida</h3>
+              <p class="project-desc"> Projeto desenvolvido como prática de front-end durante o curso Full-Stack do
+                SENAI/SC. Simula o sistema de uma farmácia fictícia, com cadastro e listagem de medicamentos e um fluxo
+                básico de autenticação de usuários.<br>
+                Exercício ideal para treinar a criação de rotas, formulários e navegação entre páginas.</p>
+              <div class="project-techs">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-react" title="React"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CarlaCristina-s/catalago_de_medicamentos" class="project-btn"
+                  target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-tech="html css js" data-aos="fade-up"
+            data-desc="Projeto final do curso de Front-end da CodeBlue, desenvolvido para aplicar os conhecimentos adquiridos em HTML, CSS e JavaScript. Baseado em um template Figma, foi o primeiro projeto com JavaScript."
+            data-funcionalidades="Página responsiva, interação com JavaScript, uso de template Figma, aplicação de boas práticas de estrutura e estilo."
+            data-imgs="./assets/code_blue.png" data-video="">
+            <img src="./assets/code_blue.png" alt="Projeto Final CodeBlue" class="project-img" loading="lazy">
+
+            <div class="project-content">
+              <h3 class="project-title">Projeto final - CodeBlue</h3>
+              <p class="project-desc">Projeto desenvolvido como avaliação final do curso de Front-end da CodeBlue,
+                marcando o primeiro contato com JavaScript e a estruturação completa de uma página web a partir de um
+                layout Figma.<br>
+                Resultado de aulas práticas diárias e desafios constantes, esse projeto representa meu “Hello, world” no
+                universo da programação.</p>
+              <div class="project-techs">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CarlaCristina-s/Code-Blue---Final-Project?tab=readme-ov-file"
+                  class="project-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-tech="node.js js" data-aos="fade-up"
+            data-desc="Aplicativo mobile desenvolvido com React Native como projeto final do módulo de front-end no curso Full-Stack do SENAI/SC. Criado para simular o controle de movimentações, estoque e entregas de produtos entre filiais de uma farmácia."
+            data-funcionalidades="Login por tipo de usuário (admin, filial, motorista), gerenciamento de estoque, cadastro de usuários e produtos, controle de validade e movimentações, rastreamento de entregas em tempo real com mapa."
+            data-imgs="./assets/log.jpg,./assets/mod1.jpg" data-video="">
+            <img src="./assets/log.jpg" alt="Aplicativo front-end TECFARMA" class="project-img" loading="lazy">
+            <div class="tech-overlay">
+              <i class="fab fa-node-js" title="Node.js"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-react" title="React"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">TECFARMA</h3>
+              <p class="project-desc">Aplicativo mobile desenvolvido como projeto final do módulo de front-end no curso
+                Full-Stack do SENAI/SC. A solução simula o gerenciamento de estoque, movimentações e entregas de
+                produtos farmacêuticos entre filiais.<br>
+                Com diferentes tipos de usuários e controle de entregas em tempo real, o sistema otimiza processos e
+                evita atrasos, garantindo eficiência logística.</p>
+              <div class="project-techs">
+                <i class="fab fa-node-js" title="Node.js"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-react" title="React"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CarlaCristina-s/projeto_modulo_1" class="project-btn" target="_blank"><i
+                    class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-tech="node.js js" data-aos="fade-up"
+            data-desc="Sistema back-end desenvolvido para gerenciar as movimentações logísticas de produtos entre filiais de uma organização farmacêutica. Permite o controle de usuários, produtos e movimentações, garantindo rastreabilidade e eficiência nos processos."
+            data-funcionalidades="CRUD de usuários e produtos, registro e rastreio de movimentações, autenticação com JWT, controle por tipo de usuário, integração com banco de dados PostgreSQL."
+            data-imgs="./assets/mod2.png,./assets/mod1.jpg" data-video="">
+            <img src="./assets/mod2.png" alt="Aplicativo back-end TECFARMA" class="project-img" loading="lazy">
+            <div class="project-content">
+              <h3 class="project-title">TECFARMA - Sistema Logístico de Produtos Farmacêuticos</h3>
+              <p class="project-desc">Sistema desenvolvido como projeto final do módulo back-end no curso Full-Stack do
+                SENAI/SC. A TECFARMA permite o gerenciamento completo de produtos, usuários e movimentações logísticas
+                entre filiais de uma organização farmacêutica.<br>
+                Desenvolvido com Node.js, TypeScript, Express e PostgreSQL, com autenticação JWT e controle de acesso
+                por tipo de usuário.</p>
+              <div class="project-techs">
+                <i class="fab fa-node-js" title="Node.js"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fas fa-database"></i>
+
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CarlaCristina-s/Projeto_modulo_2_DevInHouse" class="project-btn"
+                  target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de detalhes do projeto -->
+    <div id="project-modal" class="project-modal" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar detalhes">&times;</button>
+        <div class="modal-body">
+        </div>
+      </div>
+    </div>
+
+    <div id="image-modal" class="image-modal">
+      <span class="image-modal-close">&times;</span>
+      <img id="modal-image" src="" alt="Imagem ampliada">
+    </div>
+
+    <button class="scroll-up-btn" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <section class="container-footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Links</h4>
+          <div class="social-links">
+            <a href="https://github.com/CarlaCristina-s" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/carlacrissouza/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4><a href="#contato" id="contato"></a>Contato</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> cacrisbio@gmail.com</li>
+            <li><i class="fas fa-phone"></i> (41) 99112-1160</li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-copy">
+          <ul>
+            <li>&copy;Todos os direitos reservados</li>
+            <li>Carla Cristina de Souza</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</body>
+
+</html>
